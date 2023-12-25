@@ -1,0 +1,67 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add Prisma
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Yarn\bin\;C:\sqlite3;C:\Program Files\nodejs\;C:\Windows\System32;C:\Program Files\Git\cmd;C:\Users\Nemri Yasmine\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Nemri Yasmine\AppData\Local\Programs\Python\Python311\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Yarn\bin\;C:\sqlite3;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Nemri Yasmine\AppData\Local\Microsoft\WindowsApps;C:\Users\Nemri Yasmine\.dotnet\tools;C:\Users\Nemri Yasmine\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Nemri Yasmine\AppData\Local\Yarn\bin;C:\Users\Nemri Yasmine\AppData\Roaming\Python\Python310\Scripts;C:\Users\Nemri Yasmine\AppData\Roaming\Python\Python310\Scripts;C:\Users\Nemri Yasmine\AppData\Roaming\Python\Python310\Scripts;C:\Users\Nemri Yasmine\AppDat
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.17.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/Prisma: Not found
+      at params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66145:18)
+      at self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140890:22)
+      at Request.emit (node:events:514:28)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141862:10)
+      at Request.emit (node:events:514:28)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:628:28)
+      at IncomingMessage.emit (node:events:526:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "express-bookings",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Your REST API for managing bookings",
+    "main": "src/index.js",
+    "scripts": {
+      "dev": "nodemon src/index.js",
+      "test-positive": "newman run \"./postman/collections/Bookings API.json\" -e \"./postman/environments/Local.postman_environment.json\"",
+      "test-negative": "newman run \"./postman/collections/Bookings API Negative.json\" -e \"./postman/environments/Local.postman_environment.json\"",
+      "test": "npm run test-positive && npm run test-negative"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@prisma/client": "^5.7.0",
+      "@sentry/node": "^7.64.0",
+      "dotenv": "^16.3.1",
+      "express": "^4.18.2",
+      "jsonwebtoken": "^9.0.1",
+      "uuid": "^9.0.0",
+      "winston": "^3.10.0"
+    },
+    "devDependencies": {
+      "newman": "^6.0.0",
+      "nodemon": "^3.0.1",
+      "prisma": "^5.7.0"
+    },
+    "engines": {
+      "node": ">=18 <19"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
